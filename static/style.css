@@ -1,0 +1,207 @@
+	*{background: #3885B3;}
+	h1{font-family: Raleway; font-size: 48px;text-align:center; color:black;}
+	h2{font-size: 40px;text-align:center; color:black;}
+	p{font-family: Raleway; font-size: 32px;text-align:center; color:black;}
+    td {
+	padding: 5px 10px 0px 0px;
+	width:250px;
+	}
+
+	th {
+	width:250px;
+	}
+	table {text-align:center;font-family: Raleway; font-size: 24px;}
+
+	a:hover{color:#E65F62;}
+	a{font-family: Raleway; font-size: 32px;text-align:center;text-decoration: none;color: #FFF;display:block;}
+
+	table{
+	border: 1px solid gray;
+	display: block;
+	margin: 0px 0px;
+	width: 1000px;
+	border-spacing: 0;
+	background: white;
+	}
+	.upload::-webkit-file-upload-button {
+	display: inline-block;
+	background: white;
+	border-radius: 5px;
+	padding: 0px 20px;
+	outline: none;
+	font-family: Raleway;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 25pt;
+	border: none;
+	width: 300px;
+	content: Select a csv file;
+	}
+
+	.upload{
+	width: 300px;
+	display: inline;
+	background: #993032;
+	border-radius: 5px;
+	padding: 11px 20px 0px 20px;
+	outline: none;
+	font-family: Raleway;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 18pt;
+	background: white;
+	float: left;
+	margin-right: 5px;
+	height: 50px;
+	}
+
+	#uploadArea {
+	display: block;
+	margin: 65px auto;
+	width: 565px;
+	height: 75px;
+	padding:0px 0px 0px 85px;
+	}
+
+	#uploadButton {
+	content: 'Upload';
+	display: inline;
+	background: #993032;
+	border-radius: 5px;
+	/* padding: 15px 20px; */
+	outline: none;
+	font-family: Raleway;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 25pt;
+	float: right;
+	height: 61px;
+	margin: 1px 3px 10px 3px;
+	}
+
+	#noOfHospitals{
+	font-family: Raleway;
+	font-size: 34px;
+	display: inline;
+	padding: 0px;
+	margin: 0px 255px;
+	width: 400px;
+	}
+
+	#exampleLink{
+	    width:480px;
+	    margin: 0px auto;
+	    display:inline-block;
+	    margin-top: 80px;
+	}
+
+	input#hospitalsInput {
+	background: white;
+	width: 200px;
+	height: 25px;
+	clear: both;
+	font-size: 25px;
+	}
+
+    #deliveryTable {
+    display: block;
+    margin: 0px 0px;
+    width: 1000px;
+    border-spacing: 0;
+    background-color:transparent;
+    border: 0px;
+    }
+
+    #deliveryTable td{
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        border: 0px;
+    }
+
+	form#inputForm {
+	font-family: Raleway;
+	font-size: 32px;
+	text-align: left;
+	color: white;
+	width: 60%;
+	display: block;
+	margin: 35px auto;
+	}
+
+	input#inputForm   {
+	background: white;
+	width: 214px;
+	height: 25px;
+	float: right;
+	clear: both;
+	font-size: 25px;
+	}
+
+	input[type="submit"] {
+	font-family: Raleway;
+	font-size: 21px;
+	display: block;
+	margin: 20px auto;
+	height: 50px;
+	border-radius: 10px;
+	background: #993032;
+	color: white
+	}
+
+	#newHospital {
+	font-family: Raleway;
+	font-size: 18px;
+	display: block;
+	margin: 15px auto;
+	height: 35px;
+	border-radius: 10px;
+	background: #A1A1A1;
+	width: 508px;
+	float: none;
+	}
+	.datepicker {
+	height: 35px;
+	width: 225px;
+	padding:0px;
+	background: white;
+	font-size: 25px;
+    margin: 0px 0px;
+    float: right;
+	}
+
+	select {
+	background: white;
+	width: 230px;
+	height: 35px;
+	float: right;
+	clear: both;
+	font-size: 25px;
+	border-radius: 0px;
+	}
+
+	.hidden{display:none;}
+
+	#reportType{
+	width:70%;
+	margin: 0px auto;
+	}
+
+
+	.red {
+	background:#993032;
+	color:#fff;
+	}
+	td {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid gray;
+	font-size: 14px;
+	}
+	.white{
+	background: #fff;
+	}

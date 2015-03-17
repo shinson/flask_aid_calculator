@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" link href="/static/style.css">
+</head>
+
+<body>
+<script>
+$(document).ready(function(){
+function myFunction() {
+    var table = document.getElementById("deliveryTable");
+    var lastRow = table.rows.length;
+    var row = table.insertRow(lastRow);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = '{{form.hospitalField}}';
+    cell2.innerHTML = '{{form.deliveryDateField(class="datepicker")}}';
+    cell3.innerHTML = '{{form.deliveryTypeField}}';
+}
+     $("#newHospital").click(myFunction);
+});
+</script>
+   <p>Fill out your delivery info:</p>
+ <form action="/output_data" method="GET" id="inputForm">
+	<div id="reportType">
+		{{ form.csrf_token }}
+		{{form.reportTypeField.label}}{{form.reportTypeField}}
+		{{form.reportDateField.label}}{{form.reportDateField(class='datepicker')}}
+		</div>
+		<br>
+		<br>
+		<table id="deliveryTable">
+        <tbody><tr><th>Hospital</th><th>Delivery Date</th><th>Delivery Type</th></tr>
+        <tr>
+        <td>
+        {{form.hospitalField}}
+		</td>
+		<td>
+		{{form.deliveryDateField(class='datepicker')}}
+		</td>
+		<td id="deliveryDate">
+		{{form.deliveryTypeField}}
+		</td>
+		</tr>
+		</tbody>
+		</table>
+		<input type="button" value="Add Hospital" id="newHospital">
+		<br>
+		<div name="filename">
+       	<select name='filenameField'class='hidden' >
+       	<option value={{filename}} >{{filename}}</option>
+       	</select>
+        </div>
+        {{ form.hidden_tag() }}
+        <input type="submit" style="float:none;">
+</form>
+</body>

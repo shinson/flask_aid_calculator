@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+<head><link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" link href="/static/style.css">
+</head>
+</head>
+<body>
+    <table>
+      <tr>
+        {% for type in indicators %}
+                <td class="red">{{type}}</td>
+        {% endfor %}
+    </tr>
+
+    {% for key in display %}
+    <tr>
+        <td class="white">{{hospitals[loop.index-1]}}</td>
+        {%for type in indicators[1:]%}
+        <td class="white">{{key[type]|sum()}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+    </table>
+</body>
