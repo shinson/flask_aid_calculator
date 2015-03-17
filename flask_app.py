@@ -6,7 +6,7 @@ from werkzeug import secure_filename
 
 app = Flask(__name__)
 
-app.secret_key ='cw3cst'
+app.secret_key =''
 app.debug = True
 
 @app.route('/')
